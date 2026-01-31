@@ -1,0 +1,119 @@
+/* SemaforApp - Styles */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5e9d3;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5e9d3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b4513;
+  border-radius: 4px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border: 2px solid #8b4513;
+  box-shadow: 4px 4px 0px rgba(139, 69, 19, 0.2);
+}
+
+@keyframes slideUpFade {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUpFade 0.5s ease-out forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-pop-center {
+  animation: scaleIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+:fullscreen video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background: black;
+}
+
+::backdrop {
+  background-color: black;
+}
+
+.semaphore-stripe {
+  background: repeating-linear-gradient(
+    45deg,
+    #ff0000,
+    #ff0000 20px,
+    #ffff00 20px,
+    #ffff00 40px
+  );
+}
+
+/* Guide Table Styles */
+.guide-table {
+  border-collapse: separate;
+  border-spacing: 4px;
+  width: 100%;
+}
+
+.guide-table th,
+.guide-table td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 6px;
+  font-weight: bold;
+  border: 2px solid #8b4513;
+}
+
+.guide-table th {
+  background-color: #5c3a21;
+  color: #f5e9d3;
+}
+
+.guide-table td.cell-filled {
+  background-color: #fff;
+  color: #8b4513;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.guide-table td.cell-filled:hover {
+  background-color: #fde68a;
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.guide-table td.cell-empty {
+  background-color: #f5e9d3;
+  opacity: 0.5;
+  border: 2px dashed #8b4513;
+}

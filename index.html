@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semafor YOLOv12 - Scout Edition</title>
+
+    <!-- React & ReactDOM -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pramuka: {
+                brown: "#8B4513",
+                dark: "#5C3A21",
+                cream: "#F5E9D3",
+                green: "#4A6B3C",
+                gold: "#D4AF37",
+              },
+            },
+            animation: { wave: "wave 2s linear infinite" },
+            keyframes: {
+              wave: {
+                "0%, 100%": { transform: "rotate(-5deg)" },
+                "50%": { transform: "rotate(5deg)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- App Script -->
+    <script type="text/babel" src="app.jsx"></script>
+  </body>
+</html>
