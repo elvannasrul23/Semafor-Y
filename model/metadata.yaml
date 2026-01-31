@@ -1,0 +1,84 @@
+description: Ultralytics YOLO11s-pose model trained on /content/Semafor-5/data.yaml
+author: Ultralytics
+date: '2026-01-31T10:55:34.857140'
+version: 8.4.9
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: pose
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: Huruf A
+  1: Huruf B
+  2: Huruf C
+  3: Huruf D
+  4: Huruf E
+  5: Huruf F
+  6: Huruf G
+  7: Huruf H
+  8: Huruf I
+  9: Huruf J
+  10: Huruf K
+  11: Huruf L
+  12: Huruf M
+  13: Huruf N
+  14: Huruf O
+  15: Huruf P
+  16: Huruf Q
+  17: Huruf R
+  18: Huruf S
+  19: Huruf T
+  20: Huruf U
+  21: Huruf V
+  22: Huruf W
+  23: Huruf X
+  24: Huruf Y
+  25: Huruf Z
+args:
+  batch: 1
+  half: false
+  int8: false
+  nms: false
+channels: 3
+end2end: false
+kpt_shape:
+- 8
+- 3
+kpt_names:
+  0: &id001
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  1: *id001
+  2: *id001
+  3: *id001
+  4: *id001
+  5: *id001
+  6: *id001
+  7: *id001
+  8: *id001
+  9: *id001
+  10: *id001
+  11: *id001
+  12: *id001
+  13: *id001
+  14: *id001
+  15: *id001
+  16: *id001
+  17: *id001
+  18: *id001
+  19: *id001
+  20: *id001
+  21: *id001
+  22: *id001
+  23: *id001
+  24: *id001
+  25: *id001
